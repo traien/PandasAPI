@@ -13,7 +13,7 @@ PandasAPI is a REST API that allows you to interact with your JSON data in a con
 
 1. **Clone the repository:**
 ```
-git clone https://github.com/your-username/pandasApi.git
+git clone https://github.com/traien/PandasAPI.git
 ```
 
 2. **Install dependencies:**
