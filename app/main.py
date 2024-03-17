@@ -1,7 +1,7 @@
 import json
 from typing import Annotated
 from fastapi import FastAPI, Body
-from pandasAi import PandasAi
+from app.pandasAi import PandasAi
 
 app = FastAPI()
 
