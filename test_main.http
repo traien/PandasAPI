@@ -1,0 +1,5 @@
+POST http://127.0.0.1:8000/generate?prompt=Which%20are%20the%20top%205%20countries%20by%20sales%3F
+accept: application/json
+Content-Type: application/json
+
+"{\r\n    \"country\": [\"United States\", \"United Kingdom\", \"France\", \"Germany\", \"Italy\", \"Spain\", \"Canada\", \"Australia\", \"Japan\", \"China\"],\r\n    \"sales\": [5000, 3200, 2900, 4100, 2300, 2100, 2500, 2600, 4500, 7000]\r\n}"
