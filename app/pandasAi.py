@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 from hashable_df import hashable_df
-from pandasai import SmartDataframe
+from pandasai import Agent
 from pandasai.llm import GoogleGemini
 from pandasai.llm import OpenAI
 
@@ -21,6 +21,6 @@ class PandasAi:
         df = pd.DataFrame(json_object)
         df = hashable_df(df)
 
-        sdf = SmartDataframe(df, config={"llm": llm})
+        agent = Agent(df, config={"llm": llm})
 
-        return sdf.chat(prompt)
+        return agent.chat(prompt)

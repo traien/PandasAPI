@@ -1,8 +1,8 @@
 fastapi~=0.110.0
 pydantic>=1.8.0,<2.0.0
 uvicorn>=0.15.0,<0.16.0
-pandasai~=2.0.16
+pandasai~=2.0.38
 pandas~=1.5.3
 pyyaml~=6.0.1
-google-generativeai~=0.4.1
+google-generativeai~=0.5.3
 hashable-df~=0.0.8

@@ -1,16 +1,19 @@
 import json
-from typing import Annotated
-from fastapi import FastAPI, Body
+from typing import Any, Dict
+from pydantic import BaseModel
+from fastapi import FastAPI
 from app.pandasAi import PandasAi
+
+class Body(BaseModel):
+    content: Dict[str, Any]
 
 app = FastAPI()
 
-
 @app.post("/generate")
-async def generate_content(prompt: str, body: Annotated[str, Body()]):
+async def generate_content(prompt: str, body: Body):
     pandas = PandasAi()
 
-    json_object = json.loads(body)
+    json_object = body.content
     print(json_object)
     res = pandas.chat(json_object, prompt)
 

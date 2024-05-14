@@ -49,7 +49,9 @@ curl -X 'POST' \
   'http://127.0.0.1:8000/generate?prompt=Which%20are%20the%20top%205%20countries%20by%20sales%3F' \
   -H 'accept: application/json' \
   -H 'Content-Type: application/json' \
-  -d '"{\r\n    \"country\": [\"United States\", \"United Kingdom\", \"France\", \"Germany\", \"Italy\", \"Spain\", \"Canada\", \"Australia\", \"Japan\", \"China\"],\r\n    \"sales\": [5000, 3200, 2900, 4100, 2300, 2100, 2500, 2600, 4500, 7000]\r\n}"'
+  -d '
+  {\r\n    \"country\": [\"United States\", \"United Kingdom\", \"France\", \"Germany\", \"Italy\", \"Spain\", \"Canada\", \"Australia\", \"Japan\", \"China\"],\r\n    \"sales\": [5000, 3200, 2900, 4100, 2300, 2100, 2500, 2600, 4500, 7000]\r\n}
+  '
 ```
 
 **Response:**
